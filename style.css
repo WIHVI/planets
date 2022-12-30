@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  color: rgb(224, 196, 255);
+}
+
+body {
+  background-image: url(./images/universe.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3em;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+p {
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+
+button {
+  margin-top: 2em;
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  border: none;
+  background: inherit;
+  color: rgb(224, 196, 255);
+  text-decoration: none;
+  border-bottom: 4px solid rgb(224, 196, 255);
+  border-radius: 0.3em;
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background: rgb(224, 196, 255);
+  color: #000;
+}
+
+.container {
+  max-width: 960px;
+  margin-top: 3em;
+}
+
+header {
+  text-align: center;
+  border-radius: 0.62em;
+}
+
+label {
+  font-size: 1.8em;
+  margin-right: 0.5em;
+}
+
+select {
+  width: 10em;
+  padding: 4px 8px;
+  margin: 10px 0;
+  font-size: 1em;
+  outline: none;
+  border-radius: 0.3em;
+  color: #000;
+  opacity: 0.9;
+}
+
+#planet {
+  margin-top: 1.5em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-gap: 1em;
+}
+
+figure {
+  padding: 0.5em;
+  margin: auto;
+  border-radius: 0.62em;
+  background-color: #000;
+  opacity: 0.7;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto 0.5em auto;
+  border-radius: 0.62em;
+}
+
+figcaption {
+  font-style: italic;
+  text-align: center;
+}
+
+.planet-description {
+  border-radius: 0.62em;
+  padding: 1.5em;
+}
+
+footer {
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wiki-link {
+  font-size: 1.5em;
+}
+
+.wiki-link:hover {
+  text-decoration: none;
+}
+
+.error {
+  padding: 1em;
+}
